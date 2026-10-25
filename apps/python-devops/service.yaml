@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-devops-api
+  namespace: python-devops
+spec:
+  type: ClusterIP
+  selector:
+    app: python-devops-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
