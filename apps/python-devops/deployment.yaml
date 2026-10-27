@@ -17,7 +17,7 @@ spec:
         - name: nexus-registry-secret
       containers:
         - name: python-devops-api
-          image: 10.0.1.212:8083/python-devops-api:7
+          image: 10.0.1.212:8083/python-devops-api:8
           imagePullPolicy: Always
           ports:
             - name: http
